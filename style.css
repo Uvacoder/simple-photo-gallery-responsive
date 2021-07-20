@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  margin: 20px auto 5px auto;
+  width: 80%;
+  height: 6vh;
+  background-color: white;
+  text-align: center;
+  border-bottom: 1px solid rgb(121, 120, 122);
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+main {
+  text-align: center;
+}
+
+nav > h1 {
+  align-self: baseline;
+}
+
+.links {
+  display: flex;
+  align-items: flex-end;
+}
+
+.only-p {
+  font-size: 1.4em;
+  text-align: center;
+}
+
+.links > a {
+  font-size: 1.4em;
+  text-decoration: none;
+  padding-left: 0.3em;
+  color:rgb(121, 120, 122);
+}
+
+.tagline {
+  font-size: 0.6em;
+  letter-spacing: 0.1em;
+  margin-left: 1.9em;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+  flex-basis: 500px;
+  width: 100%;
+  box-sizing: content-box;
+  justify-content: center;
+}
+
+img {
+  width: 30%;
+}
+
+.image-one {
+    position: relative;
+    display: inline-flex;
+    width: 30%;
+    margin: 0;
+    padding: 0;
+}
+
+#one {
+    width: 100%;
+}
+
+.photo {
+  margin: calc(10% / 6);
+  filter: grayscale(100%);
+  transition: filter ease-in 500ms;
+}
+
+.img-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(216, 189, 149, 0.575);
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+}
+
+.img-overlay:hover {
+    opacity: 1;
+}
+
+.photo:hover {
+  filter: grayscale(0%);
+}
+
+#one:hover {
+  filter: sepia(100%);
+}
+
+@media (max-width: 760px) {
+  nav {
+    margin: 20px auto 5px auto;
+    width: 100%;
+  }
+
+  .only-p {
+    display: none;
+  }
+
+  .img-overlay {
+      font-size: 0.6em;
+  }
+}
